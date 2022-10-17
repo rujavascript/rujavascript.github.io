@@ -109,7 +109,7 @@ textarea
 [name="copy"]
 {
     position:absolute;
-    bottom: 3px;
+    bottom: 1.1%;
     right: 0;
 }
 @media (min-width: 768px)
