@@ -1,0 +1,117 @@
+@font-face
+{
+    font-family: "Scada-Regular";
+    font-display: swap;
+    src: url("fonts/Scada-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+html, button, textarea
+{
+	font-family: "Scada-Regular", Helvetica, Impact, Arial, sanf-serif;
+}
+*, *:before, *:after
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html
+{
+    height: 100%;  
+}
+html
+{
+    color: #fffde8;
+    background-color: #231f20;
+}
+button
+{
+    background-color: #f3cb37;
+    color:#231f20; 
+    padding: 0.5rem;
+    border: 0;
+}
+button:hover
+{
+	background-color: #231f20;
+    color:#f3cb37; 
+	transition: all 0.5s ease 0s;
+}
+button:active
+{
+	background-color: #f3cb37;
+    color: #231f20;
+    transition: all -0.5s;
+}
+span
+{
+    color:#ff0846;
+}
+a
+{
+    color:#f3cb37;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #fffde8;
+    transition: all 0.5s ease 0s;
+}
+header, footer
+{
+    background-color: #231f20;
+}
+#content
+{
+    background-color: #2b2929;
+}
+header>*, footer>*, #content>*
+{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+}
+p
+{
+    padding: 0rem 0 0.5rem 0;
+}
+.textAreaWrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+.input, .output
+{
+    flex-basis: 98%;
+    margin: 0 0 0 1%;
+    position:relative;
+}
+textarea
+{
+    resize: none;
+    width:100%;
+    font-size: 12px;
+    background-color: #fffde8;
+    color: #231f20;
+    padding: 5px;
+}
+[name="copy"]
+{
+    position:absolute;
+    bottom: 3px;
+    right: 0;
+}
+@media (min-width: 768px)
+{
+    .input, .output
+    {
+        flex-basis: 49%;
+    }
+}
+textarea:focus, input:focus {outline: none;}
