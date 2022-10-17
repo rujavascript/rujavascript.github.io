@@ -33,6 +33,11 @@ button
     padding: 0.5rem;
     border: 0;
 }
+*::selection
+{
+	background-color: #f3cb37;
+    color:#231f20; 
+}
 button:hover
 {
 	background-color: #231f20;
